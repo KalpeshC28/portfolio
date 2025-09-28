@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import { FaLinkedin, FaGithub, FaInstagram, FaHeart, FaArrowUp } from 'react-icons/fa'
 
 const Footer = () => {
@@ -44,15 +45,22 @@ const Footer = () => {
           >
             <h4 className="text-lg font-semibold">Quick Links</h4>
             <ul className="space-y-2">
-              {['Home', 'About', 'Skills', 'Projects', 'Experience', 'Contact'].map((link) => (
-                <motion.li key={link}>
-                  <a
-                    href={`#${link.toLowerCase()}`}
+              {[
+                { label: 'Home', path: '/' },
+                { label: 'About', path: '/about' },
+                { label: 'Skills', path: '/skills' },
+                { label: 'Projects', path: '/projects' },
+                { label: 'Experience', path: '/experience' },
+                { label: 'Contact', path: '/contact' }
+              ].map((item) => (
+                <motion.li key={item.label}>
+                  <Link
+                    to={item.path}
                     className="text-gray-400 hover:text-white transition-colors duration-200 flex items-center group"
                   >
                     <span className="w-0 h-0.5 bg-primary-500 transition-all duration-200 group-hover:w-4 mr-0 group-hover:mr-2"></span>
-                    {link}
-                  </a>
+                    {item.label}
+                  </Link>
                 </motion.li>
               ))}
             </ul>

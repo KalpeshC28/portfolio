@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react'
+import { Link } from 'react-router-dom'
 import LaserFlow from './LaserFlow'
 import { motion } from 'framer-motion'
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa'
@@ -110,18 +111,18 @@ const Hero = () => {
               transition={{ delay: 0.8 }}
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8"
             >
-              <a
-                href="/projects"
+              <Link
+                to="/projects"
                 className="btn btn-primary px-8 py-4 text-lg"
               >
                 View My Work
-              </a>
-              <a
-                href="/contact"
+              </Link>
+              <Link
+                to="/contact"
                 className="btn btn-secondary px-8 py-4 text-lg"
               >
                 Get In Touch
-              </a>
+              </Link>
             </motion.div>
 
             {/* Social Links */}
