@@ -1,4 +1,4 @@
-import React from 'react';
+// ...existing code...
 import { Routes, Route } from 'react-router-dom';
 import Hero from './components/Hero';
 import About from './components/About';

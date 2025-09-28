@@ -5,16 +5,13 @@ import {
   FaCss3Alt, 
   FaJs, 
   FaReact, 
-  FaVuejs, 
   FaNodeJs, 
   FaPython, 
   FaDatabase,
   FaGitAlt,
-  FaDocker,
   FaAws,
   FaFigma
 } from 'react-icons/fa'
-import { SiTypescript, SiExpress, SiMongodb, SiTailwindcss } from 'react-icons/si'
 
 const Skills = () => {
   const [ref, inView] = useInView({

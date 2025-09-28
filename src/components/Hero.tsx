@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
 import LaserFlow from './LaserFlow'
 import { motion } from 'framer-motion'
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaInstagram } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa'
 import Typed from 'typed.js'
 
 const Hero = () => {
