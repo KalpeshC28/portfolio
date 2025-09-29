@@ -1,4 +1,3 @@
-// ...existing code...
 import { Routes, Route, Navigate } from 'react-router-dom';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -15,7 +14,7 @@ const SectionRoutes = () => (
     <Route path="/projects" element={<Projects />} />
     <Route path="/experience" element={<Experience />} />
     <Route path="/contact" element={<Contact />} />
-    <Route path="*" element={<Navigate to="/" />} />
+  <Route path="*" element={<Navigate to="/" />} />
   </Routes>
 );
 
